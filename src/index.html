@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="">
+        <meta name="keywords" content="code in the dark cordoba gdg">
+        <title>Code in the Dark Córdoba</title>
+
+        <!-- Open graph -->
+        <meta property="og:title" content="Code in the Dark">
+        <meta property="og:image" content="http://codeinthedark.gdgcordoba.com/img/share/facebook.png">
+        <meta property="og:description" content="">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="http://codeinthedark.gdgcordoba.com">
+        <meta property="og:site_name" content="Code in the Dark Córdoba">
+
+        <!-- Twitter cards -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="http://codeinthedark.gdgcordoba.com">
+        <meta name="twitter:creator" content="GDGCordobaESP">
+        <meta name="twitter:via" content="GDGCordobaESP">
+        <meta name="twitter:title" content="GDG Design&amp;Tech Córdoba 2015">
+        <meta name="twitter:url" content="http://designtech.gdgcordoba.com">
+        <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="http://codeinthedark.gdgcordoba.com/img/share/facebook.png">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.4/mapbox-gl.css">
+        <link rel="stylesheet" href="css/application.css">
+
+        <link rel="icon" href="img/favicons/favicon.ico">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+        <link rel="icon" type="image/png" href="img/favicons/favicon-196x196.png">
+        <link rel="icon" type="image/png" href="img/favicons/favicon-160x160.png">
+        <link rel="icon" type="image/png" href="img/favicons/favicon-96x96.png">
+        <link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png">
+    </head>
+    <body>
+        <main>
+            <section class="preloader-section valign-wrapper">
+                <svg class="preloader" viewbox="0 0 40 40">
+                    <polygon points="0 0 0 40 40 40 40 0"/>
+                </svg>
+            </section>
+            <section class="video-section">
+                <div class="video-filter"></div>
+                <div class="video-background" style="background-image: url( 'img/background-2.png' )"></div>
+                <video id="video" autoplay loop muted>
+                    <source src="video/codeinthedark.mp4">
+                    <source src="video/codeinthedark.ogg">
+                    <source src="video/codeinthedark.webm">
+                </video>
+            </section>
+
+            <section class="welcome-section">
+                <div class="welcome-section-background"></div>
+                <div class="valign-wrapper welcome-logos-container">
+                    <div class="valign welcome-logos">
+                        <div id="gdgcordoba">
+                            <img src="img/gdgcordoba-green.svg">
+                            <h1 id="gdgcordoba-text">
+                                Presenta
+                            </h1>
+                        </div>
+                        <img id="codeinthedark" src="img/logo.svg">
+                    </div>
+                </div>
+                <div class="valign-wrapper welcome-more-container" data-scroll="info">
+                    <i class="fa fa-angle-down"></i>
+                </div>
+            </section>
+            <section data-section="info">
+                <div class="valign-wrapper" style="height: 100vh;">
+                    <div class="valign prueba" style="margin: 0 auto; text-align: center">
+                        <h3 class="info-title">
+                            ¿CREES QUE SABES DE FRONTEND?
+                        </h3>
+                        <h2 class="info-rule">
+                            20 minutos
+                        </h2>
+                        <h2 class="info-rule">
+                            3 rondas
+                        </h2>
+                        <h2 class="info-rule">
+                            Solo HTML y CSS
+                        </h2>
+                        <h2 class="info-rule">
+                            Sin previsualizar
+                        </h2>
+                        <h2 class="info-rule">
+                            Un ganador
+                        </h2>
+                    </div>
+                </div>
+            </section>
+            <section data-section="rules">
+                <div class="valign-wrapper" style="height: 100vh;">
+                    <div class="valign prueba" style="margin: 0 auto; text-align: center">
+                        <h3 class="info-title">
+                            NORMAS
+                        </h3>
+                        <h2 class="info-rule">
+                            20 minutos
+                        </h2>
+                        <h2 class="info-rule">
+                            3 rondas
+                        </h2>
+                        <h2 class="info-rule">
+                            Solo HTML y CSS
+                        </h2>
+                        <h2 class="info-rule">
+                            Sin previsualizar
+                        </h2>
+                        <h2 class="info-rule">
+                            Un ganador
+                        </h2>
+                    </div>
+                </div>
+            </section>
+            <section id="map"></section>
+            <section></section>
+        </main>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script type="text/javascript" src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.4/mapbox-gl.js"></script>
+        <script type="text/javascript" src="js/application.js"></script>
+    </body>
+</html>

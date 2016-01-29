@@ -1,0 +1,103 @@
+.welcome-section {
+    background-color: black;
+}
+
+.welcome-section-background {
+    background-image: url( 'http://codeinthedark.com/img/top-background.png' );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: calc( 100% / 2 );
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    z-index: 0;
+}
+
+.page-loaded .welcome-section-background {
+    @include animation( 'fade-in 1s 6.5s linear forwards' );
+}
+
+.welcome-logos-container {
+    height: calc( 100vh - 50px );
+}
+
+.welcome-logos {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 500px;
+    width: 500px;
+    z-index: 1;
+}
+
+.welcome-logos img {
+    width: 100%;
+    max-width: 60vw;
+    max-height: 60vh;
+    margin: 0 auto;
+}
+
+#gdgcordoba {
+    margin: 0 auto;
+    text-align: center;
+    opacity: 0;
+}
+
+.page-loaded #gdgcordoba {
+    @include animation( 'gdgcordoba-fade-in-out 4s 1s linear forwards' );
+}
+
+#gdgcordoba-text {
+    margin: 0 auto;
+    font-size: 25px;
+    padding-top: 10px;
+    opacity: 0;
+}
+
+.page-loaded #gdgcordoba-text {
+    @include animation( 'fade-in 1s 2s linear forwards' );
+}
+
+#codeinthedark {
+    display: none;
+    opacity: 0;
+}
+
+.page-loaded #codeinthedark {
+    @include animation( 'fade-in 2s 1s linear forwards' );
+}
+
+.welcome-more-container {
+    height: 50px;
+}
+
+.welcome-more-container i {
+    margin: 0 auto;
+    font-size: 50px;
+    opacity: 0;
+    z-index: 1;
+}
+
+.page-loaded .welcome-more-container i {
+    @include animation( 'fade-in 2s 7s linear forwards, fa-down-movement 0.5s infinite alternate linear' );
+}
+
+//
+// ANIMATIONS
+//
+@include keyframes( fa-down-movement ) {
+    0%   { margin-top: 0px }
+    100% { margin-top: -20px }
+}
+
+@include keyframes( gdgcordoba-fade-in-out ) {
+    0%    { opacity: 0 }
+    40%   { opacity: 1 }
+    60%   { opacity: 1 }
+    100%  { opacity: 0 }
+}
+
+@include keyframes( fade-in ) {
+    0%    { opacity: 0 }
+    100%  { opacity: 1 }
+}
