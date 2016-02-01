@@ -19,10 +19,6 @@
     background-color: black;
     opacity: 0.8;
     z-index: 10;
-
-    @include respond( mobile ) {
-        opacity: 0.5;
-    }
 }
 
 .video-background {

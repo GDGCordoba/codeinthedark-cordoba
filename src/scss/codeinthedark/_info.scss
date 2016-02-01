@@ -1,13 +1,55 @@
 .info-title {
     color: $green;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 3vh;
+    font-weight: 600;
+    line-height: 3vh;
     margin-bottom: 50px;
+
+    @include respond( phones ) {
+        margin-bottom: 20px;
+    }
 }
 
 .info-rule {
     color: #adccb9;
-    font-size: 35px;
-    line-height: 60px;
+    font-size: 5vh;
+    line-height: 8vh;
     font-weight: lighter;
+}
+
+.info-date {
+    color: #adccb9;
+    font-size: 5vh;
+    line-height: 8vh;
+    font-weight: 600;
+}
+
+.info-place {
+    color: #adccb9;
+    font-size: 5vh;
+    line-height: 6vh;
+    font-weight: lighter;
+}
+
+.info-button {
+    @include transition();
+    width: 80vw;
+    max-width: 300px;
+    font-size: 2vh;
+    font-weight: 600;
+    padding: 20px 0;
+    background-color: transparent;
+    border: 2px solid $green;
+    margin-top: 50px;
+    cursor: pointer;
+
+    @include respond( phones ) {
+        max-width: 80vw;
+        font-size: 3vh;
+    }
+}
+
+.info-button:active, .info-button:hover, .info-button:focus {
+    box-shadow: 0 0 15px $green;
+    outline: 0;
 }
